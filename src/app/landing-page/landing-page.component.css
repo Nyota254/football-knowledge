@@ -1,0 +1,9 @@
+#allsportimage {
+    float:left;
+    margin-right:15px;
+}
+
+.darktheme {
+    background-color: black;
+    color:white;
+}

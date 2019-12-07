@@ -1,1 +1,14 @@
-<p>landing-page works!</p>
+<!-- <div class="darktheme"> -->
+<div class="container">
+  <h1 class="text-center">FOOTBALL KNOWLEDGE</h1>
+  <p>Hey there sports fan though this might be a football site we would like to appretiate all other sports
+    here checkout this amazing sports and games played around the world
+  </p>
+  
+  <div *ngFor='let sport of allsports | paginate: { itemsPerPage: 5, currentPage: p}'>
+      <h1 class="text-center">{{ sport.strSport }}</h1>
+      <p><img src="{{ sport.strSportThumb }}" alt="{{ sport.strSport }} Image" id="allsportimage">{{ sport.strSportDescription }}</p>
+    </div><br>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+<!-- </div> -->

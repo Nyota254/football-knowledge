@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AllSportsService } from '../services/all-sports.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  p: number = 1;
+  public allsports = []
+
+  constructor(private _allSportsSevice:AllSportsService) { }
 
   ngOnInit() {
+
+    this._allSportsSevice.getSports().subscribe(data => {this.allsports = data['sports']});
+
   }
 
 }
