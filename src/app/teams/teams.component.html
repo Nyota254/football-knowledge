@@ -1,7 +1,20 @@
 <div class="container">
-    <div class="row">
+    <div>
         <div *ngFor="let team of teams">
-            <img src="{{ team.strTeamLogo }}" alt="{{ team.strTeam }} Logo" class="img-fluid team-logo">
-        </div>
+            <div class="text-center">
+                <!-- <img src="{{ team.strTeamLogo }}" alt="{{ team.strTeam }} Logo" class="img-fluid team-logo"> -->
+                <h1>{{ team.strTeam }}</h1>
+            </div>
+            <p><img src="{{ team.strTeamBadge }}" alt="{{ team.strTeam }} Badge" class="team-badge">Team Logo</p>
+            <p><i class="sub-heading">Year Founded:</i>{{ team.intFormedYear }}</p>
+            <p><i class="sub-heading">Team Description</i><br> {{ team.strDescriptionEN }}</p>
+            <p><img src="{{ team.strStadiumThumb }}" alt="stadium image" class="stadium-image"><i class="sub-heading">Team Stadium:</i>{{ team.strStadium }}<br> {{ team.strStadiumDescription }} </p>
+            <div class="social">
+                <a href="{{ team.strFacebook }}"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="{{ team.strTwitter }}"><i class="fab fa-twitter"></i></a>
+                <a href="{{ team.strInstagram}}"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="{{ team.strYoutube }}"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            </div>
+        </div><br>
     </div>
 </div>

@@ -2,3 +2,28 @@
     height: 50px;
     width: auto;
 }
+
+.team-badge {
+    height: 100px;
+    width: auto;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+}
+
+.stadium-image {
+    float:left;
+    margin-right:15px;
+    width: 500px;
+    height: auto;
+}
+
+.sub-heading {
+    font-size: 24px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.social {
+    font-size: 50px;
+}
