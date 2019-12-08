@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { TeamsComponent } from './teams/teams.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     SearchFormsComponent,
     NavbarComponent,
     AboutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,
